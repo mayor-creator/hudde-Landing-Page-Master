@@ -1,0 +1,113 @@
+@import 'mixins';
+.footer {
+    background-color: $veryDarkCyan;
+    height: 34.029375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2rem 2rem 5rem;
+    @include mobile {
+        display: block;
+        height: 47.5rem;
+        padding: 0rem;
+    }
+}
+
+.leftFooter {
+    width: 23.51rem;
+    height: 16.45rem;
+    //margin-top: 40px;
+    @include mobile {
+        height: 17.7rem;
+        padding-top: 6.25rem;
+    }
+}
+
+.footerLogo {
+    width: 12.8125rem;
+    display: block;
+    background: white;
+    margin-bottom: 2.1875rem;
+    @include mobile {
+        margin-bottom: 0.625rem;
+    }
+}
+
+.locationImage,
+.phoneFooterImage,
+.emailFooterImage {
+    float: left;
+    //display: inline-block;
+    margin: 0.625rem;
+}
+
+.locationFooterMessage,
+.phoneFooterMessage,
+.emailFooterMessage {
+    color: $veryPaleCyan;
+    padding-left: 2.1875rem;
+}
+
+.middleFooter {
+    height: 16.45rem;
+    width: 28.079375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include mobile {
+        display: block;
+        position: relative;
+        left: 0px;
+        bottom: 5.562rem;
+        margin-top: 3.125rem;
+    }
+}
+
+a {
+    color: $veryPaleCyan;
+    display: block;
+    text-decoration: none;
+    padding: 0.625rem;
+}
+
+ul {
+    @include mobile {
+        padding-left: 0.3125rem;
+        margin-bottom: 0px;
+    }
+}
+
+.secondInformation {
+    @include mobile {
+        margin-top: 0px;
+    }
+}
+
+
+/*
+.copyRight {
+    color: $veryPaleCyan;
+    position: relative;
+    top: 10.6875rem;
+}
+*/
+
+.rightFooter {
+    @include mobile {
+        display: block;
+        padding-left: 8.8rem;
+    }
+}
+
+i.fa {
+    display: inline-block;
+    border-radius: 3.125rem;
+    box-shadow: 0rem 0rem 0.125rem $veryPaleCyan;
+    padding: 0.5rem 0.6rem;
+    color: $veryPaleCyan;
+}
+
+i.fa:hover {
+    box-shadow: 0rem 0rem 0.125rem $primaryColor;
+    color: $primaryColor;
+}

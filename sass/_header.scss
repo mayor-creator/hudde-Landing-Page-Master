@@ -1,0 +1,120 @@
+@import 'mixins';
+header {
+    background-color: $veryPaleCyan;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 48.9248125rem;
+    //width: 89.0625rem;
+    @include mobile {
+        height: 45rem;
+        //width: 23.625rem;
+    }
+}
+
+//nav bar
+.navigation {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    padding: 2rem 2rem 2rem 5rem;
+    @include mobile {
+        height: 2.5rem;
+        width: 22.125rem;
+        padding: 1.4375rem 0.75rem 1.4375rem 0.75rem;
+    }
+}
+
+.logoImage {
+    margin-right: 50rem;
+    width: 12.8125rem;
+    @include mobile {
+        margin-right: 8.125rem;
+        width: 6.8125rem;
+    }
+}
+
+.tryItBtn {
+    border-radius: 3.125rem;
+    border: none;
+    background-color: $colorWhite;
+    height: 3.3125rem;
+    width: 12.75rem;
+    font-weight: bold;
+    font-size: $fontSize;
+    @include mobile {
+        height: 1.75rem;
+        width: 6.8125rem;
+    }
+}
+
+.illustrationImage {
+    height: 30.5rem;
+    float: right;
+    padding-top: 3rem;
+    padding-right: 5rem;
+    @include mobile {
+        display: block;
+        float: none;
+        height: 13.1875rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3125rem;
+        position: relative;
+        top: 24.375rem;
+    }
+}
+
+#headerSection {
+    height: 28.5rem;
+    width: 36.625rem;
+    padding-left: 5rem;
+    padding-top: 7rem;
+    @include mobile {
+        display: block;
+        height: 19.625rem;
+        width: 19.25rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.3125rem;
+        position: relative;
+        bottom: 12.5rem;
+    }
+}
+
+.buildHeader {
+    font-family: $headingsFontFamily;
+    font-weight: $headingsFontWeight;
+    height: 6rem;
+    width: 27.25rem;
+    @include mobile {}
+}
+
+.huddleMessage {
+    height: 5.375rem;
+    width: 32rem;
+    font-size: $fontSize;
+    @include mobile {
+        height: 7.785rem;
+        width: 18.985625rem;
+        text-align: center;
+        margin-bottom: 3.125rem;
+    }
+}
+
+//sharing properties with ready to build button from the section.scss file 
+.getStartedBtn,
+.readyToBuildBtn {
+    border: none;
+    border-radius: 3.125rem;
+    background-color: $primaryColor;
+    color: $colorWhite;
+    height: 3.625rem;
+    width: 17.5rem;
+    @include mobile {
+        display: block;
+        margin: auto;
+        height: 2.6rem;
+        width: 15.0rem;
+    }
+}
